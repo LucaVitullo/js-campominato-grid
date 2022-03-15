@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#grid {
+  width: 500px;
+  height: 500px;
+  background-color: antiquewhite;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 2px dashed red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-cyan {
+  background-color: cyan;
+}
