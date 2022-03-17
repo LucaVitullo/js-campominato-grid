@@ -36,6 +36,7 @@ const totalCells = colums * rows;
 
 for(let i = 0; i<totalCells;i++){
 
+    const cell = createCell();
     grid.appendChild(cell);
 
     if(richiestaUtente==1){
@@ -51,6 +52,8 @@ for(let i = 0; i<totalCells;i++){
         cell.classList.toggle("bg-cyan")
     })
 }
+
+
 function createCell() {
     const item = document.createElement('div');
     item.classList.add('cell');
